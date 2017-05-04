@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>情感分析(beta)</title>
+</head>
+<body>
+<p style="font-size:50px;color:blue;font-weight:bold;font-style:italic">Senti</p>
+<div align="center">
+  <form action="/" method="post">
+    <legend style="font-size:30px">请输入:</legend>
+    <p><textarea rows="6" cols="50" type="text" style="font-size:30px" name="csrc">{{ csrc }}</textarea></p>
+    <p><button type="submit" style="font-size:30px">分析</button></p>
+  </form>
+  {% if etgt %}
+  <p>{{ etgt|safe }}</p>
+  {% endif %}
+</div>
+</body>
+</html>
